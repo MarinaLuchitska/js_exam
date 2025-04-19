@@ -1,22 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
+
 header {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: #ffe0e6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
     margin-bottom: 20px;
 }
+
+header h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+#rates {
+    color: #444;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 .converter {
+    background-color: #ffe0e6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
+    gap: 15px;
 }
+
 .row {
     display: flex;
     gap: 10px;
 }
-input {
-    width: 100px;
+
+input[type="number"] {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
 }
+
+select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 1em;
+    min-width: 80px;
+}
+
+.exchange-info {
+    font-size: 0.8em;
+    color: #666;
+    text-align: right;
+    margin-top: 10px;
+}
+

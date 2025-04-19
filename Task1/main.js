@@ -18,7 +18,7 @@ fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
             EUR: eur.rate
         };
 
-        rateText.innerText = `1 USD = ${usd.rate.toFixed(2)} UAH, 1 EUR = ${eur.rate.toFixed(2)} UAH`;
+        rateText.textContent = `1 USD = ${usd.rate.toFixed(2)} UAH, 1 EUR = ${eur.rate.toFixed(2)} UAH`;
         convertFromFirst();
     });
 
