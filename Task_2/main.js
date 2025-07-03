@@ -4,8 +4,8 @@ function isValidPair(str) {
     const regex = /^\s*([a-zA-Z0-9]+)\s*=\s*([a-zA-Z0-9]+)\s*$/;
     return regex.exec(str);
 }
-
-function addPair() {
+let addPair = document.getElementById('addPair')
+addPair.addEventListener('click',function (){
     const input = document.getElementById('pairInput');
     const value = input.value.trim();
     const match = isValidPair(value);
@@ -20,15 +20,15 @@ function addPair() {
     } else {
         alert("Invalid format. Use name=value with only letters and numbers.");
     }
-}
-
-function sortByName() {
+});
+let sortNameBtn = document.getElementById('sortNameBtn')
+sortNameBtn.addEventListener('click', function () {
     sortPairs((a, b) => a.name.localeCompare(b.name));
-}
-
-function sortByValue() {
+})
+let sortValueBtn = document.getElementById('sortValueBtn')
+sortValueBtn.addEventListener('click',function () {
     sortPairs((a, b) => a.value.localeCompare(b.value));
-}
+})
 
 function sortPairs(compareFn) {
     const options = Array.from(pairList.options).map(opt => {
@@ -46,10 +46,10 @@ function sortPairs(compareFn) {
         pairList.appendChild(opt);
     }
 }
-
-function deleteSelected() {
+let delBtn = document.getElementById('delBtn')
+delBtn.addEventListener('click',function () {
     const selected = Array.from(pairList.selectedOptions);
     for (let opt of selected) {
         opt.remove();
     }
-}
+})

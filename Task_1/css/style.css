@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+
+#blockContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.userDiv {
+    flex: 1 1 calc(50% - 16px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+}
+.userInfo {
+    margin: 0 0 8px 0;
+}
+.detailsBtn {
+    align-self: flex-start;
+    padding: 6px 14px;
+    background: #1976d2;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.detailsBtn:hover {
+    background: #145ba9;
+}
+
+

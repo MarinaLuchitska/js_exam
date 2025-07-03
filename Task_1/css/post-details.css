@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background: #f5f7fa;
+}
+.backBtn {
+    margin-bottom: 20px;
+    padding: 6px 14px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#postBox {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+#postBox ul {
+    list-style: square;
+    margin-left: 20px;
+}
+#commentsBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.comment-card {
+    flex: 0 0 calc(25% - 16px);
+    background: #ffffff;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.comment-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #1976d2;
+}
+
+.comment-card small {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 13px;
+}
+
+.comment-card p {
+    margin: 0;
+    font-size: 14px;
+}
